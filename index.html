@@ -1,492 +1,461 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CtrlCon 2025 - INDEX</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #000000;
-            color: #d0d0d0;
-            line-height: 1.7;
-            font-size: 15px;
-        }
-
-        .top-nav {
-            background-color: #1a1a1a;
-            padding: 10px 20px;
-            border-bottom: 1px solid #333;
-        }
-
-        .top-nav a {
-            color: #d0d0d0;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 14px;
-        }
-
-        .top-nav a:hover {
-            color: #abe0fd;
-        }
-
-        .top-nav .site-title {
-            color: #abe0fd;
-            font-weight: bold;
-            margin-right: 30px;
-        }
-
-        .header {
-            background-color: #abe0fd;
-            color: #000000;
-            padding: 12px 20px;
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 100%;
-        }
-
-        h1, h2, h3 {
-            color: #ffffff;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            letter-spacing: 0.5px;
-            font-size: 15px;
-        }
-
-        h1 {
-            margin-top: 15px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #d0d0d0;
-        }
-
-        a {
-            color: #abe0fd;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .news-item {
-            margin: 8px 0;
-        }
-
-        .news-prefix {
-            color: #abe0fd;
-            font-weight: bold;
-        }
-
-        .news-arrows {
-            color: #abe0fd;
-            font-weight: bold;
-        }
-
-        .social-link {
-            display: block;
-            margin: 3px 0;
-            color: #ffd700;
-        }
-
-        .location-name {
-            color: #ff00ff;
-            margin-bottom: 5px;
-        }
-
-        .location-address {
-            color: #d0d0d0;
-            margin-bottom: 5px;
-        }
-
-        .cost {
-            color: #ff00ff;
-        }
-
-        .tickets-link {
-            color: #ffd700;
-        }
-
-        blockquote {
-            margin: 15px 0;
-            padding-left: 0;
-            border: none;
-            color: #d0d0d0;
-        }
-
-        .quote-source {
-            color: #ffd700;
-            font-style: normal;
-            display: inline;
-        }
-
-        .ellipsis {
-            color: #666666;
-            margin: 10px 0;
-        }
-
-        .crew-links a {
-            color: #abe0fd;
-            margin-right: 5px;
-        }
-
-        strong {
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        .event-list {
-            margin: 15px 0;
-        }
-
-        .event-item {
-            margin: 5px 0;
-            color: #d0d0d0;
-        }
-
-        .event-item .date {
-            color: #ffd700;
-        }
-
-        .event-item .status {
-            color: #ff00ff;
-        }
-
-        .keyboard-shortcuts {
-            margin: 15px 0;
-            color: #d0d0d0;
-        }
-
-        .shortcut {
-            color: #abe0fd;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
-            .header {
-                padding: 10px 15px;
-                font-size: 14px;
-            }
-
-            body {
-                font-size: 14px;
-            }
-
-            .top-nav {
-                padding: 8px 15px;
-            }
-
-            .top-nav a {
-                display: inline-block;
-                margin-right: 10px;
-                margin-bottom: 5px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CtrlCon &mdash; Community-driven GRC conference</title>
+  <meta name="description" content="CtrlCon is the community-driven GRC conference for practitioners done with compliance theatre and ready to build GRC like engineers." />
+  <meta property="og:title" content="CtrlCon &mdash; Community-driven GRC conference" />
+  <meta property="og:description" content="The first community-driven GRC conference for practitioners ready to build GRC like engineers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.svg" />
+  <meta property="og:url" content="https://ctrlcon.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CtrlCon &mdash; Community-driven GRC conference" />
+  <meta name="twitter:description" content="The first community-driven GRC conference for practitioners ready to build GRC like engineers." />
+  <meta name="twitter:image" content="/assets/og-image.svg" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <div class="top-nav">
-        <span class="site-title">CtrlCon</span>
-        <a href="#index">Index</a>
-        <a href="#events">Events</a>
-        <a href="#what-to-expect">What to Expect</a>
-        <a href="#organize">Organize</a>
-        <a href="#sponsoring">Sponsoring</a>
-        <a href="#faq">FAQ</a>
+<body data-sheet-endpoint="https://script.google.com/macros/s/AKfycby77vrJJEEyutVr9Mkk3vS10xWUWG6Si38_M3tn60615uon93O7_m2h1f-izns4fGfeYg/exec">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <span class="brand-mark">CtrlCon</span>
+        <span class="status-chip">London &mdash; September 2026</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <div class="nav-panel" id="nav-panel">
+          <a href="#about" data-nav>About</a>
+          <a href="#london-2026" data-nav>London 2026</a>
+          <a href="#cfp" data-nav>CFP</a>
+          <a href="#sponsor" data-nav>Sponsor</a>
+          <a href="#code-of-conduct" data-nav>Code of Conduct</a>
+          <a href="#linkedin" data-nav>LinkedIn</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <div class="header">2025 - INDEX</div>
-    
-    <div class="container">
-        <div class="section">
-            <h1>What's CtrlCon?</h1>
-            <p>CtrlCon is a community organised series of events all over the world promoting GRC Engineering, threat-driven compliance, and modern automation practices. We think it's important to have a CtrlCon movement as the industry is evolving from audit-driven compliance factories to product-focused engineering teams, and practitioners need a space to share implementation patterns, challenge vendor marketing, and build the next generation of GRC infrastructure.</p>
-            
-            <p>CtrlCon usually goes hand-in-hand with the famous "hallway track", as these events are free and have less of a vendor expo atmosphere than a practitioner meetup. Many people come to talk to peers solving similar problems, share implementation guides, and connect with others building GRC like engineers rather than auditors. Of course, there are always great talks and workshops, and that's the main focus of every CtrlCon event!</p>
-            
-            <p>The name? CtrlCon has three meanings that capture what we're about:</p>
-            <p>1. <strong>Controls:</strong> The fundamental building block of GRC. We design controls, test controls, remediate control gaps, and build compensating controls. Every conversation in GRC eventually comes back to controls.</p>
-            <p>2. <strong>Ctrl shortcuts:</strong> Every GRC practitioner knows the power of keyboard shortcuts. <span class="shortcut">Ctrl+C</span>, <span class="shortcut">Ctrl+V</span>, <span class="shortcut">Ctrl+F</span> are the tools of our trade. We live in spreadsheets, we automate with code.</p>
-            <p>3. <strong>Taking control:</strong> Of how GRC is done. No more audit-driven compliance theatre. No more vendor marketing disguised as thought leadership. We're taking control back.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Community-run. In person. Slightly opinionated.</p>
+          <h1>CtrlCon</h1>
+          <p class="hero-subheadline">The first community-driven GRC conference for practitioners who are done with compliance theatre and ready to build GRC like engineers.</p>
+          <p class="hero-supporting">No sales pitches. No buzzword bingo. Just real controls, real threats, and real implementation experience.</p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#waitlist">Join the London 2026 waitlist</a>
+            <a class="btn btn-secondary" href="#cfp">Call for Papers</a>
+            <a class="btn btn-ghost" href="#sponsor">Sponsor CtrlCon</a>
+          </div>
+          <p class="hero-microcopy">Community-run. In person. Slightly opinionated, genuinely welcoming.</p>
+          <div class="chip-row">
+            <span class="chip mono">STATUS: FOUNDING EVENT</span>
+            <span class="chip">Hallway-first</span>
+            <span class="keycap">Ctrl+Enter</span>
+          </div>
+        </div>
+        <div class="hero-card card reveal">
+          <div class="card-header">
+            <span class="mono-label">LON-2026</span>
+            <span class="chip">Founding event</span>
+          </div>
+          <p class="lead">A practitioner-led conference built for real implementation detail, threat-driven controls, and honest conversations.</p>
+          <div class="keycap-row">
+            <span class="keycap">Ctrl+C</span>
+            <span class="keycap">Ctrl+V</span>
+            <span class="keycap">Ctrl+F</span>
+          </div>
+          <p class="muted">London, September 2026. Date to follow soonish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section waitlist" id="waitlist">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Waitlist</h2>
+          <p class="section-intro">Get early access to London 2026 updates, speaker announcements, and planning details.</p>
+        </div>
+        <form class="form card js-form reveal" aria-label="Join the CtrlCon waitlist" data-sheet="Waitlist">
+          <label for="waitlist-email">Email</label>
+          <div class="form-row">
+            <input id="waitlist-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            <button class="btn btn-primary" type="submit">Join waitlist</button>
+          </div>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="about" data-section="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What CtrlCon is / isn't</h2>
+          <p class="section-intro">A practitioner-first conference with zero compliance theatre.</p>
         </div>
 
-        <div class="section">
-            <h2>What is GRC Engineering?</h2>
-            <p>GRC Engineering represents an evolution in how organisations approach governance, risk, and compliance. Rather than treating GRC as a compliance factory optimising for auditors, GRC Engineering applies software engineering principles to build threat-driven programs that actually reduce risk.</p>
-            
-            <p>To see what GRC Engineering means to the community, check out the <a href="#">GRC Engineering Manifesto</a> and read <a href="#">implementation guides</a> from practitioners who've scaled GRC programs at high-growth companies.</p>
-        </div>
+        <div class="tabs reveal" data-tabs>
+          <div class="tablist" role="tablist" aria-label="CtrlCon is or isn't">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="tab-is" id="tab-is-btn">CtrlCon is</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="tab-isnt" id="tab-isnt-btn">CtrlCon isn't</button>
+          </div>
 
-        <div class="section">
-            <h2>Take Back Control</h2>
-            <div class="keyboard-shortcuts">
-                <p><span class="shortcut">Ctrl+C</span> / <span class="shortcut">Ctrl+V</span> - Stop copying compliance theatre from last year</p>
-                <p><span class="shortcut">Ctrl+F</span> - Find control gaps before auditors do</p>
-                <p><span class="shortcut">Ctrl+Z</span> - Undo broken audit-driven approaches</p>
-                <p><span class="shortcut">Ctrl+S</span> - Save time with automated control testing</p>
-                <p><span class="shortcut">Ctrl+A</span> - Select all controls and map them to actual threats</p>
-                <p><span class="shortcut">Ctrl+H</span> - Replace compensating controls with proper ones</p>
-                <p><span class="shortcut">Ctrl+Alt+Delete</span> - Restart GRC with threat-driven frameworks</p>
+          <div class="tab-panels">
+            <div class="tab-panel is-active" role="tabpanel" id="tab-is" aria-labelledby="tab-is-btn">
+              <h3>CtrlCon is</h3>
+              <ul class="list">
+                <li>A practitioner-driven conference, organised by people who actually build and run GRC programs</li>
+                <li>A place to talk openly about what works, what doesn't, and why</li>
+                <li>Focused on controls, threats, evidence, automation, and engineering trade-offs</li>
+                <li>Heavy on hallway conversations, shared patterns, and honest war stories</li>
+              </ul>
             </div>
-        </div>
 
-        <div class="section">
-            <h2>News</h2>
-            <div class="news-item">
-                <span class="news-prefix">&gt;&gt;&gt;</span> <strong>[1764323000]: Founding Event Announced</strong> <span class="news-arrows">&lt;&lt;&lt;</span>
+            <div class="tab-panel" role="tabpanel" id="tab-isnt" aria-labelledby="tab-isnt-btn">
+              <h3>CtrlCon isn't</h3>
+              <ul class="list">
+                <li>A sales event or lead-generation exercise</li>
+                <li>A sequence of thinly veiled product demos</li>
+                <li>A framework-recital or checkbox optimisation workshop</li>
+                <li>A place where buzzwords replace implementation detail</li>
+                <li>An event optimised for auditors instead of practitioners</li>
+              </ul>
             </div>
-            <p>The first CtrlCon will launch in Q2 2025 in London. This is not another compliance conference. This is where GRC Engineers meet to solve real problems.</p>
-            
-            <div class="news-item">
-                <span class="news-prefix">&gt;&gt;&gt;</span> <strong>[1764323100]: Call for Organisers</strong> <span class="news-arrows">&lt;&lt;&lt;</span>
+          </div>
+        </div>
+
+        <p class="closer reveal">If you're looking for real conversations about building GRC that actually reduces risk, you're in the right place.</p>
+      </div>
+    </section>
+
+    <section class="section" id="what" data-section="what">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What is CtrlCon</h2>
+        </div>
+        <div class="text-grid reveal">
+          <p>CtrlCon is a community-organised series of events around the world promoting GRC Engineering, threat-driven compliance, and modern automation practices.</p>
+          <p>We believe the industry is evolving from audit-driven compliance factories to product-focused engineering teams. Practitioners need a space to share implementation patterns, challenge vendor marketing, and build the next generation of GRC infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vibe" data-section="vibe">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>The vibe</h2>
+          <p class="section-intro">Hallway-first, implementation-heavy, and unapologetically practitioner-led.</p>
+        </div>
+        <div class="split-grid reveal">
+          <div>
+            <p>CtrlCon is built around the famous hallway track. Events are designed to feel more like a practitioner meetup than a vendor expo. People come to:</p>
+            <ul class="list">
+              <li>Talk to peers solving similar problems</li>
+              <li>Share implementation guides</li>
+              <li>Exchange patterns and lessons learned</li>
+              <li>Connect with others building GRC like engineers rather than auditors</li>
+            </ul>
+          </div>
+          <div class="card">
+            <p class="lead">And yes, there are always great talks and workshops, because that is the main focus of every CtrlCon event.</p>
+            <div class="chip-row">
+              <span class="chip">Hallway track</span>
+              <span class="chip mono">NO VENDOR THEATRE</span>
             </div>
-            <p>Interested in organising a CtrlCon in your city? We're looking for practitioners who want to build local communities. Resources and support available.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Upcoming Events</h2>
-            <p>CtrlCon events are being organised worldwide. Each event is run independently by local practitioners following the CtrlCon framework.</p>
-            
-            <div class="event-list">
-                <div class="event-item">
-                    <span class="date">TBC Q2 2025</span> - <strong>CtrlCon London</strong> (London, UK) <span class="status">Founding Event</span>
-                </div>
-                <div class="event-item">
-                    <span class="date">TBC 2025</span> - <strong>CtrlCon San Francisco</strong> (San Francisco, USA) <span class="status">In Planning</span>
-                </div>
-                <div class="event-item">
-                    <span class="date">TBC 2025</span> - <strong>CtrlCon Singapore</strong> (Singapore) <span class="status">Interest Expressed</span>
-                </div>
+    <section class="section" id="why-name" data-section="why-name">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why the name</h2>
+        </div>
+        <div class="card-grid reveal">
+          <article class="card">
+            <h3>Controls</h3>
+            <p>The fundamental building block of GRC. We design controls, test controls, remediate control gaps, and build compensating controls.</p>
+          </article>
+          <article class="card">
+            <h3>Ctrl shortcuts</h3>
+            <p>Ctrl+C, Ctrl+V, Ctrl+F. We live in spreadsheets. We automate with code.</p>
+            <div class="keycap-row">
+              <span class="keycap">Ctrl+C</span>
+              <span class="keycap">Ctrl+V</span>
+              <span class="keycap">Ctrl+F</span>
             </div>
-            
-            <p>Want to organise a CtrlCon in your city? See the <a href="#organize">Organize</a> page for guidelines and resources.</p>
+          </article>
+          <article class="card">
+            <h3>Taking control</h3>
+            <p>No more audit-driven compliance theatre. No more vendor marketing disguised as thought leadership. We're taking control back.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Socials</h2>
-            <p>You can find us on the following social media sites:</p>
-            <a href="#" class="social-link">LinkedIn</a>
-            <a href="#" class="social-link">X formerly known as Twitter</a>
-            <a href="#" class="social-link">Newsletter (GRC Engineer)</a>
+    <section class="section" id="grc-engineering" data-section="grc-engineering">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What is GRC Engineering</h2>
         </div>
+        <div class="split-grid reveal">
+          <p>GRC Engineering represents an evolution in how organisations approach governance, risk, and compliance. Instead of optimising for audit outcomes, GRC Engineering applies software and security engineering principles to build threat-driven programs that actually reduce risk.</p>
+          <ul class="list">
+            <li>A data and systems problem</li>
+            <li>An engineering discipline, not a documentation exercise</li>
+            <li>A continuous process, not a once-a-year audit sprint</li>
+          </ul>
+        </div>
+        <p class="closer reveal">CtrlCon exists to give practitioners a place to share how this works in the real world.</p>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>What's CtrlCon</h2>
-            <blockquote>
-                "CtrlCon is a community-driven framework for building events for and by GRC practitioners who believe compliance should be threat-driven, not audit-driven. The goal is to bridge the gap between security engineering and traditional compliance, creating opportunities for practitioners to share implementation patterns, challenge the status quo, and build GRC infrastructure that actually reduces risk rather than just satisfying auditors. It is an intense event focused on real implementation details, threat-to-control mapping, automation patterns, and the hard problems that vendor marketing glosses over. It is where the conversations about GRC Engineering are happening." <span class="quote-source">- GRC Engineering Framework</span>
-            </blockquote>
+    <section class="section" id="london-2026" data-section="london-2026">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>News</h2>
         </div>
+        <div class="callout card reveal">
+          <div class="callout-header">
+            <span class="chip mono">LONDON-2026</span>
+            <span class="chip">Founding event</span>
+          </div>
+          <h3>CtrlCon London &mdash; September 2026</h3>
+          <p>CtrlCon London will take place September 2026 (date to follow soonish). This is the founding CtrlCon event and will be held in person in London. Expect actually helpful sessions, honest practitioner discussions, and the kind of hallway conversations you don't get at vendor-led conferences.</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <p class="ellipsis">...</p>
+    <section class="section" id="what-happens" data-section="what-happens">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What happens at CtrlCon</h2>
         </div>
+        <div class="feature-grid reveal">
+          <article class="card">Implementation guides and real code, not vendor pitches</article>
+          <article class="card">Threat-to-control mapping workshops with actual frameworks</article>
+          <article class="card">Live demos of GRC automation patterns and infrastructure-as-code</article>
+          <article class="card">Honest discussions about what works and what doesn't</article>
+          <article class="card">Deep dives into treating GRC as a data architecture problem</article>
+          <article class="card">Challenge sessions that push back on broken industry practices</article>
+          <article class="card">Excel horror stories and keyboard shortcut competitions (for fun)</article>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <blockquote>
-                "CtrlCon emerged from the GRC Engineering movement that started in 2024 when practitioners realised traditional compliance approaches weren't working. The audit-driven model optimises for external stakeholders whilst creating the 364-Day Problem where controls work perfectly on audit day but drift the rest of the year. CtrlCon brings together security engineers, GRC practitioners, product managers, and forward-thinking auditors who believe we need to treat GRC like a data problem, build evidence collection as infrastructure, and push actionable information back to risk owners rather than just collecting artefacts for compliance theatre. Events are generally free to attend, rely on sponsorship from vendors who actually build useful tools, and are run by practitioners who've lived the pain of scaling GRC programs at high-growth companies."
-            </blockquote>
+    <section class="section" id="who" data-section="who">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Who should attend</h2>
         </div>
+        <ul class="list two-col reveal">
+          <li>Security engineers building control automation</li>
+          <li>GRC practitioners scaling programs at high-growth companies</li>
+          <li>Product managers at GRC vendors who want to build better tools</li>
+          <li>Forward-thinking auditors interested in continuous monitoring</li>
+          <li>CISOs and security leaders rethinking their GRC strategy</li>
+          <li>People who dream in spreadsheet formulas and API calls</li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>It's All About Controls</h2>
-            <p>Every GRC program ultimately comes down to controls. At CtrlCon, we focus on the real work:</p>
-            <p>- Designing controls that map to actual threats, not just framework requirements</p>
-            <p>- Testing controls continuously, not once per year</p>
-            <p>- Remediating control gaps before they become incidents</p>
-            <p>- Building compensating controls when primary controls fail</p>
-            <p>- Automating control evidence collection as infrastructure</p>
-            <p>- Measuring control effectiveness with real metrics, not audit opinions</p>
-            <p>- Understanding when a control is actually a detective control masquerading as preventive</p>
-            <p>- Pushing control monitoring data back to the teams who can act on it</p>
+    <section class="section" id="tracks" data-section="tracks">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Tracks</h2>
         </div>
+        <div class="card-grid reveal">
+          <article class="card">
+            <h3>Engineering Track</h3>
+            <p>Automation patterns, IaC, CI/CD integration, data pipelines</p>
+          </article>
+          <article class="card">
+            <h3>Architecture Track</h3>
+            <p>System design, vendor evaluation, build vs buy, integrations</p>
+          </article>
+          <article class="card">
+            <h3>Operations Track</h3>
+            <p>Scaling programs, team structures, stakeholder management, CCM</p>
+          </article>
+          <article class="card">
+            <h3>Strategy Track</h3>
+            <p>Threat-driven frameworks, risk quantification, board reporting, maturity models</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Attending Your First CtrlCon?</h2>
-            <p>See <a href="#what-to-expect">What to Expect</a> for details on preparation, event formats, and how to get the most out of your CtrlCon experience.</p>
-            
-            <p>Each CtrlCon may use different formats:</p>
-            <p>- <strong>Structured:</strong> Traditional conference format with pre-selected talks</p>
-            <p>- <strong>Unconference:</strong> Participant-driven schedule set on the day</p>
-            <p>- <strong>Hybrid:</strong> Mix of pre-scheduled talks and open space discussions</p>
+    <section class="section" id="resources" data-section="resources">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Resources</h2>
         </div>
+        <div class="card reveal">
+          <p>New here?</p>
+          <ul class="list">
+            <li>Follow CtrlCon on <a href="https://www.linkedin.com/company/ctrlcon/" target="_blank" rel="noopener">LinkedIn: https://www.linkedin.com/company/ctrlcon/</a></li>
+            <li>Join the conversation and watch for announcements on upcoming events, speakers, and calls for participation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>What You'll Find at CtrlCon</h2>
-            <p>Unlike traditional compliance conferences, CtrlCon focuses on:</p>
-            <p>- Implementation guides and real code, not vendor pitches</p>
-            <p>- Threat-to-control mapping workshops with actual frameworks</p>
-            <p>- Live demos of GRC automation patterns and infrastructure-as-code</p>
-            <p>- Honest discussions about what works and what doesn't in real environments</p>
-            <p>- Deep dives into treating GRC as a data architecture problem</p>
-            <p>- Challenge sessions where practitioners push back on broken industry practices</p>
-            <p>- Excel horror stories and keyboard shortcut competitions (for fun)</p>
+    <section class="section" id="sponsor" data-section="sponsor">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Sponsorship</h2>
+          <p class="section-intro">CtrlCon sponsorship is different.</p>
         </div>
+        <div class="split-grid reveal">
+          <div>
+            <p>We only work with vendors who:</p>
+            <ul class="list">
+              <li>Understand practitioner problems</li>
+              <li>Can discuss what they don't solve</li>
+              <li>Support the community without expecting a sales pitch slot</li>
+              <li>Align with the GRC Engineering philosophy</li>
+            </ul>
+            <p><strong>Contact:</strong> &lt;TBD&gt;</p>
+          </div>
+          <form class="form card js-form" aria-label="Sponsor interest form" data-sheet="Sponsor Interest">
+            <label for="sponsor-company">Company</label>
+            <input id="sponsor-company" name="company" type="text" placeholder="Company name" required />
+            <label for="sponsor-email">Email</label>
+            <input id="sponsor-email" name="email" type="email" placeholder="name@company.com" autocomplete="email" required />
+            <button class="btn btn-primary" type="submit">Sponsor interest</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Who Should Attend</h2>
-            <p>CtrlCon is for practitioners who are frustrated with compliance theatre and want to build GRC programs that actually reduce risk. You'll find:</p>
-            <p>- Security engineers building control automation</p>
-            <p>- GRC practitioners scaling programs at high-growth companies</p>
-            <p>- Product managers at GRC vendors who want to build better tools</p>
-            <p>- Forward-thinking auditors interested in continuous monitoring</p>
-            <p>- CISOs and security leaders rethinking their GRC strategy</p>
-            <p>- Anyone who's read the GRC Engineering manifesto and wants to contribute</p>
-            <p>- People who dream in spreadsheet formulas and API calls</p>
+    <section class="section" id="volunteers" data-section="volunteers">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Volunteers</h2>
         </div>
+        <div class="card reveal">
+          <p>Want to volunteer?</p>
+          <p>Reach out via LinkedIn or email: &lt;TBD&gt;</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Track Themes</h2>
-            <p>Each CtrlCon features multiple tracks focusing on different aspects of modern GRC:</p>
-            <p><span style="color: #ff00ff;">Engineering Track:</span> Automation patterns, infrastructure-as-code, CI/CD integration, data pipelines</p>
-            <p><span style="color: #ff00ff;">Architecture Track:</span> System design, vendor evaluation, build vs buy decisions, integration patterns</p>
-            <p><span style="color: #ff00ff;">Operations Track:</span> Scaling programs, team structures, stakeholder management, continuous controls monitoring</p>
-            <p><span style="color: #ff00ff;">Strategy Track:</span> Threat-driven frameworks, risk quantification, board reporting, programme maturity models</p>
+    <section class="section" id="linkedin" data-section="linkedin">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Socials</h2>
         </div>
+        <div class="card reveal">
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/ctrlcon/" target="_blank" rel="noopener">https://www.linkedin.com/company/ctrlcon/</a></p>
+          <p class="muted">More channels will be added as the community grows.</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Information and Resources</h2>
-            <p>New here? Start with these resources:</p>
-            <p>- Read the <a href="#">GRC Engineering Manifesto</a></p>
-            <p>- Browse <a href="#">Implementation Guides</a> (32 guides, 60,000 words)</p>
-            <p>- Join the <a href="#">LinkedIn Group</a></p>
-            <p>- Subscribe to the <a href="#">GRC Engineer Newsletter</a></p>
-            <p>- Listen to the <a href="#">GRC Engineer Podcast</a></p>
+    <section class="section" id="cfp" data-section="cfp">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Call for Papers</h2>
+          <p class="section-intro">We're looking for talks that share real implementation experience.</p>
         </div>
+        <div class="split-grid reveal">
+          <div>
+            <p>Ideal topics include:</p>
+            <ul class="list">
+              <li>Threat-to-control mapping with real examples</li>
+              <li>Evidence automation at scale</li>
+              <li>Lessons learned from failed GRC implementations</li>
+              <li>Continuous controls monitoring</li>
+              <li>Deep dives into technical challenges (RBAC evidence, SoD, etc.)</li>
+              <li>Honest vendor evaluations from a practitioner perspective</li>
+              <li>That one Excel formula that saved you 40 hours a week</li>
+            </ul>
+            <p><strong>Submit:</strong> &lt;TBD&gt;</p>
+          </div>
+          <form class="form card js-form" aria-label="Call for papers interest form" data-sheet="CFP">
+            <label for="cfp-name">Name</label>
+            <input id="cfp-name" name="name" type="text" placeholder="Your name" required />
+            <label for="cfp-email">Email</label>
+            <input id="cfp-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            <label for="cfp-idea">Talk idea</label>
+            <textarea id="cfp-idea" name="idea" rows="4" placeholder="Give us the gist..." required></textarea>
+            <button class="btn btn-primary" type="submit">Submit talk idea</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Organising a CtrlCon?</h2>
-            <p>Read about <a href="#organize">organising a local CtrlCon</a>. Resources are available to help you make the event a success. Please send an email to crew [at] ctrlcon [dot] io if you would like to organise a CtrlCon event in your city.</p>
-            
-            <p>We'll schedule a conversation to explain the rules and guidelines, answer questions, and connect you with other organisers.</p>
+    <section class="section" id="code-of-conduct" data-section="code-of-conduct">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Code of Conduct</h2>
+          <p class="section-intro">CtrlCon is a professional environment focused on learning and collaboration.</p>
         </div>
+        <div class="split-grid reveal">
+          <div class="card">
+            <h3>We expect</h3>
+            <ul class="list">
+              <li>Respectful discourse</li>
+              <li>That everybody is welcome and treated with due respect</li>
+              <li>A shared understanding that we're one team for the day</li>
+              <li>No vendor ambushes or aggressive sales</li>
+              <li>Genuine knowledge sharing</li>
+              <li>Constructive criticism over cynicism</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>We do not expect</h3>
+            <ul class="list">
+              <li>Racism, sexism, discrimination, or harassment of any kind</li>
+              <li>Behaviour that makes others feel unwelcome, unsafe, or unheard</li>
+              <li>Perfect answers or polished success stories</li>
+              <li>That everyone agrees on approaches, tools, or frameworks</li>
+              <li>Slides full of buzzwords without substance</li>
+              <li>Sales pitches disguised as talks or discussions</li>
+              <li>Performative compliance or theory without real-world context</li>
+              <li>That your implementation is "done" or "mature"</li>
+            </ul>
+          </div>
+        </div>
+        <p class="closer reveal">CtrlCon values honesty over perfection, curiosity over certainty, and learning over posturing.</p>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Sponsorship</h2>
-            <p>Interested in <a href="#sponsoring">sponsoring</a> CtrlCon or a specific event? We work with vendors who understand practitioner problems and support the GRC Engineering philosophy.</p>
-            
-            <p>CtrlCon sponsorship is different. We only work with vendors who:</p>
-            <p>- Actually understand the problems practitioners face</p>
-            <p>- Are willing to have honest discussions about what they don't solve</p>
-            <p>- Support the community without expecting a sales pitch slot</p>
-            <p>- Believe in the GRC Engineering philosophy</p>
-            <p>Contact: sponsors [at] ctrlcon [dot] io</p>
+    <section class="section" id="stay-updated" data-section="stay-updated">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Stay Updated</h2>
         </div>
+        <div class="card muted-card reveal">
+          <p class="mono-label">Coming soon</p>
+          <p>[TODO: Newsletter signup block text]</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <div class="section">
-            <h2>Volunteers</h2>
-            <p>You want to volunteer? Get in touch with us <a href="#">via LinkedIn</a>, <a href="#">via email</a> or be old fashioned and send us an email to crew [at] ctrlcon [dot] io.</p>
-        </div>
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <span class="sr-only">Back to top</span>
+    <span aria-hidden="true">&uarr;</span>
+  </button>
 
-        <div class="section">
-            <h2>Tag for social media</h2>
-            <p>Please use <a href="#">#CtrlCon</a> and <a href="#">#GRCEngineering</a> for content related to these events.</p>
-        </div>
-
-        <div class="section">
-            <h2>CtrlCon History</h2>
-            <p>CtrlCon was born out of frustration with traditional compliance conferences that focused more on vendor marketing and audit checklists than on solving real practitioner problems. In 2024, Ayoub launched the GRC Engineering movement through his <a href="#">manifesto</a> and newsletter, advocating for treating GRC like a product organisation rather than a compliance factory.</p>
-            
-            <p>The movement gained traction as practitioners worldwide resonated with the idea that GRC should be threat-driven, not audit-driven. By late 2024, a community of 2,000+ newsletter subscribers, 25,000+ LinkedIn followers, and 150+ company leaders had formed around these principles.</p>
-            
-            <p>CtrlCon emerged as the natural next step: a conference framework that would bring this community together for genuine knowledge sharing, implementation pattern discussions, and collaborative problem-solving, without the vendor theatre that dominates traditional compliance events.</p>
-            
-            <p>The name reflects the daily reality of GRC practitioners: we live in spreadsheets, we automate with code, and we know every keyboard shortcut. But more fundamentally, we live and breathe controls. We design controls, we test controls, we document control evidence, we build compensating controls, we map controls to frameworks, and we obsess over control effectiveness. CtrlCon is about taking back control of how we work with controls.</p>
-        </div>
-
-        <div class="section">
-            <h2>Founding Team</h2>
-            <p class="crew-links">
-                <a href="#">Ayoub (Founder)</a>
-                <span style="color: #888888;">- ..and community volunteers joining soon</span>
-            </p>
-            
-            <p>Ayoub is a GRC professional at GitLab leading Security Assurance Automation, founder of GRC Engineer, and creator of the GRC Engineering movement. Recognised as the #2 cybersecurity voice in the UK with 25,000+ LinkedIn followers.</p>
-        </div>
-
-        <div class="section">
-            <h2>Manifesto</h2>
-            <p>CtrlCon is built on the principles of the GRC Engineering movement:</p>
-            <p>1. Compliance should be threat-driven, not audit-driven</p>
-            <p>2. GRC is fundamentally a data architecture problem</p>
-            <p>3. Evidence collection should be automated infrastructure, not manual toil</p>
-            <p>4. Controls should be continuously monitored, not checked once per year</p>
-            <p>5. The goal is risk reduction, not just satisfying frameworks</p>
-            <p>6. Practitioners should challenge broken industry practices</p>
-            <p>7. Knowledge sharing beats vendor marketing every time</p>
-        </div>
-
-        <div class="section">
-            <h2>Call for Papers</h2>
-            <p>We're looking for talks that share real implementation experience, not theory or vendor pitches. Ideal topics include:</p>
-            <p>- Your approach to threat-to-control mapping with real examples</p>
-            <p>- How you automated evidence collection at scale</p>
-            <p>- Lessons learned from failed GRC implementations</p>
-            <p>- Novel approaches to continuous controls monitoring</p>
-            <p>- Deep dives into specific technical challenges (e.g., RBAC evidence, segregation of duties)</p>
-            <p>- Honest vendor evaluations from a practitioner perspective</p>
-            <p>- That one Excel formula that saved you 40 hours a week</p>
-            <p>Submit proposals to: cfp [at] ctrlcon [dot] io</p>
-        </div>
-
-        <div class="section">
-            <h2>Code of Conduct</h2>
-            <p>CtrlCon is a professional environment focused on learning and collaboration. We expect:</p>
-            <p>- Respectful discourse, even when challenging ideas</p>
-            <p>- No vendor ambushes or aggressive sales tactics</p>
-            <p>- Genuine knowledge sharing, not just promoting your company</p>
-            <p>- Constructive criticism over cynicism</p>
-            <p>- Recognition that we're all trying to solve hard problems</p>
-            <p>- Sharing your best keyboard shortcuts with fellow attendees</p>
-        </div>
-
-        <div class="section">
-            <h2>Anti-Spam Policy</h2>
-            <p>To maintain the quality of CtrlCon as a practitioner-focused community, we have strict policies against vendor spam and aggressive sales tactics. CtrlCon is by practitioners, for practitioners.</p>
-        </div>
-
-        <div class="section">
-            <p class="ellipsis">...</p>
-        </div>
-
-        <div class="section">
-            <blockquote>
-                "The GRC industry needs this. We've spent too long optimising for auditors instead of risk reduction. CtrlCon is where practitioners can finally have honest conversations about what works, what doesn't, and how to build GRC programs that actually make organisations more secure. This isn't another vendor conference. This is where the real work happens. Press <span class="shortcut">Ctrl+Enter</span> to join us." <span class="quote-source">- Early Supporter</span>
-            </blockquote>
-        </div>
-
-        <div class="section">
-            <h2>Stay Updated</h2>
-            <p>CtrlCon is just getting started. Subscribe to the <a href="#">GRC Engineer newsletter</a> for updates on:</p>
-            <p>- Event dates and locations</p>
-            <p>- Call for papers announcements</p>
-            <p>- Speaker lineups</p>
-            <p>- Organiser resources</p>
-            <p>- Community initiatives</p>
-            <p>- Advanced Excel tips (just kidding, but maybe)</p>
-        </div>
-    </div>
+  <script src="main.js"></script>
 </body>
 </html>
